@@ -8,7 +8,10 @@ public class ElectricCar extends CarSkeleton {
         super(name, description);
         this.avgKmPerCharge = avgKmPerCharge;
         this.batterySize = batterySize;
-
+    }
+    @Override
+    public boolean equals(Object obj) {
+        return (((ElectricCar)obj).getDescription().equals(getDescription()));
     }
 
 

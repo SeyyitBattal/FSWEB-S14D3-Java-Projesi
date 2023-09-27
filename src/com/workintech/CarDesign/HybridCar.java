@@ -11,5 +11,9 @@ public class HybridCar extends CarSkeleton {
         this.avgKmPerLitre = avgKmPerLitre;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        return (((HybridCar)obj).getDescription().equals(getDescription()));
+    }
 
 }

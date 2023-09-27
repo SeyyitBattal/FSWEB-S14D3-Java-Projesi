@@ -26,15 +26,25 @@ public class CarSkeleton {
     }
 
     public void startEngine() {
-
+        System.out.println("Engine is started to work");
+        System.out.println("It's name: " + getName());
     }
 
-    
+
     public void drive() {
         runEngine();
+        System.out.println("You can drive now!");
     }
 
     protected void runEngine() {
+        System.out.println("Engine is working");
+    }
 
+    @Override
+    public String toString() {
+        return "CarSkeleton{" +
+                "name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                '}';
     }
 }

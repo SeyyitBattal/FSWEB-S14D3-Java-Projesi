@@ -10,5 +10,8 @@ public class GasPoweredCar extends CarSkeleton {
         this.cylinders = cylinders;
     }
 
-
+    @Override
+    public boolean equals(Object obj) {
+        return (((GasPoweredCar)obj).getDescription().equals(getDescription()));
+    }
 }

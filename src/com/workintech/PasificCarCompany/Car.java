@@ -27,12 +27,10 @@ public class Car {
 
     public void accelerate() {
         System.out.println("the car is accelerating");
-        System.out.println("It's name: " + getName());
     }
 
     public void brake() {
         System.out.println("the car is braking");
-        System.out.println("It's name: " + getName());
     }
 
 

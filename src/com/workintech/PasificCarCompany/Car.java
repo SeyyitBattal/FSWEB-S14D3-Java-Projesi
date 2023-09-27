@@ -20,5 +20,29 @@ public class Car {
         return name;
     }
 
+    public void startEngine() {
+        System.out.println("the car's engine is starting");
+        System.out.println("It's name: " + getName());
+    }
 
+    public void accelerate() {
+        System.out.println("the car is accelerating");
+        System.out.println("It's name: " + getName());
+    }
+
+    public void brake() {
+        System.out.println("the car is braking");
+        System.out.println("It's name: " + getName());
+    }
+
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "isEngine=" + isEngine +
+                ", cylinders=" + cylinders +
+                ", wheels=" + wheels +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }
